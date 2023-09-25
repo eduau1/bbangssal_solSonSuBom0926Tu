@@ -1,0 +1,168 @@
+##class spacebar selection
+<button class="button button1">Green</button>
+<button class="button button2">Blue</button>
+.button {
+font-size: 30px;
+border: 10px solid;
+}
+.button1 {
+color:blue;
+}
+.button2{
+color:red;
+}
+
+
+## getElement and document.getElement
+<body style="font-family:system-ui; background:#f06d06; color:white; text-align:center;">
+worked
+<button id="hh" onclick="getElementById('hh').style.color = 'red'"> 111 </button>
+didn't work
+<h1> hihi </h1>
+<button onclick = "getElementByTagName('h1')[0].style.fontSize = '50px'"> 222 </button>
+worked
+<button onclick = "document.getElementsByTagName('h1')[0].style.fontSize = '10px'"> 333 </button>
+</body>
+
+
+##selector
+<body style="background:darkorange; text-align:center; color:white">
+<h3 id='tagtag' class='hh kk aa'>👋 Hello World!</h3>
+<p id='active' class="hell"> hihi </p>
+<button onclick='document.getElementsByTagName("h3")[0].style.color = "red"'>button!!!!!</button>
+<input type="button" value="change" onclick='document.getElementsByTagName("h3")[0].style.fontSize = "3vw"; document.getElementsByTagName("h3")[0].style.color = "grey"'>
+</body>
+console
+active
+active = "<p id='active' class='hll'> hihihihi </p>"
+document.getElementById('active')
+document.getElementsByTagName('h3')
+document.getElementsByTagName('h3')[0]
+document.getElementsByTagName('h3')[0].style
+document.getElementsByTagName('p')
+document.getElementsByTagName('p').style.color = 'blue'
+document.getElementsByTagName('h3')[0].tagName //read only
+document.getElementsByTagName('h3')[0].id
+document.getElementsByTagName('h3')[0].id = 'deactive'
+document.getElementsByTagName('h3')[0].className
+document.getElementsByTagName('h3')[0].className = 'hh'
+document.getElementsByTagName('h3')[0].classList
+document.getElementsByTagName('h3')[0].classList.length
+for(var i = 0; i< document.getElementsByTagName('h3')[0].classList.length; i++){
+console.log(document.getElementsByTagName('h3')[0].classList[i])
+}
+document.getElementsByTagName('h3')[0].classList[0]
+document.getElementsByTagName('h3')[0].classList.add('gg')
+document.getElementsByTagName('h3')[0].classList
+document.getElementsByTagName('h3')[0].classList.remove('gg')
+document.getElementsByTagName('h3')[0].classList.toggle('gg')
+
+
+
+
+##selector
+<ul>
+<li>html</li>	
+<li id="selected">css</li>	
+<li id="extra">javascri;t</li>	
+</ul>	
+console
+document.getElementsByTagName('ul')[0].getElementsByTagName('li')[0]
+document.getElementById('selected').style.color = 'blue';
+document.getElementById('extra').style.color = 'red';
+
+
+##constructor and constructor.name
+<ul>
+<li>html</li>	
+<li id="selected">css</li>	
+<li id="extra">javascri;t</li>	
+</ul>
+document.getElementsByClassName.constructor
+document.getElementsByClassName.constructor.name
+document.getElementsByClassName('li').constructor
+document.getElementsByClassName('li').constructor.name
+
+
+##navigator
+window.navigator.userAgent
+window.navigator.platform
+window.navigator.appName
+window.navigator.geolocation
+window.navigator.product
+window.navigator.language
+window.navigator.cookieEnabled
+window.navigator.appVersion
+window.navigator.onLine
+
+##location
+location.assign()
+location.hash
+location.host
+location.hostname
+location.href
+location.origin
+location.pathname
+location.port
+location.protocol
+location.reload()
+location.replace()
+location.search
+
+
+
+##Window History
+window.history.back()
+window.history.forward()
+
+##Timing Events
+setTimeout(function, milliseconds)
+setInterval(function, milliseconds)
+window.clearTimeout() 
+<button onclick="myVar = setTimeout(myFunction, 3000)">Try it</button>
+<button onclick="clearTimeout(myVar)">Stop it</button>
+setInterval(myTimer, 1000);
+function myTimer() {
+  const d = new Date();
+  document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
+window.clearInterval() 
+<body>
+<p id="demo"></p>
+<button onclick="clearInterval(myVar)">Stop time</button>
+<script>
+let myVar = setInterval(myTimer ,1000);
+function myTimer() {
+  const d = new Date();
+  document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
+</script>
+</body>
+
+##cookies
+document.cookie 
+
+
+##links
+<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+target = "_self"
+target = "_blank"
+target = "_blank"
+target = "_top"
+<a href="https://www.w3schools.com/html/default.asp"><img src="https://www.w3schools.com/html/smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+
+##bookmark
+<h2 id="C4">Chapter 4</h2>
+<a href="#C4">Jump to Chapter 4</a>
+
+##dir
+<p dir="rtl">Write this text right-to-left!</p>
+ltr rtl auto
+
+
+##innerHTMLinnerTexttextContent
+<p id="myP">   This element has extra spacing   and contains <span>a span element</span>.</p>
+document.getElementById("myP").innerHTML;
+document.getElementById("myP").innerText;
+document.getElementById("myP").textContent
+
