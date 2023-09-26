@@ -1,0 +1,61 @@
+console
+document.getElementsByTagName('ul')[0].getElementsByTagName('li')[0]
+document.getElementById('selected').style.color = 'blue';
+document.getElementById('extra').style.color = 'red';
+document.querySelector('p')
+document.querySelectorAll('li')
+idactive
+active = "<p id='active' class='hll'> hihihihi </p>"
+document.getElementById('active')
+document.getElementsByTagName('h3')
+document.getElementsByTagName('h3')[0]
+document.getElementsByTagName('h3')[0].style
+document.getElementsByTagName('p')
+document.getElementsByTagName('p').style.color = 'blue'
+document.getElementsByTagName('h3')[0].tagName //read only
+document.getElementsByTagName('h3')[0].id
+document.getElementsByTagName('h3')[0].id = 'deactive'
+document.getElementsByTagName('h3')[0].className
+document.getElementsByTagName('h3')[0].className = 'hh'
+document.getElementsByTagName('h3')[0].classList
+document.getElementsByTagName('h3')[0].classList.length
+for(var i = 0; i< document.getElementsByTagName('h3')[0].classList.length; i++){
+console.log(document.getElementsByTagName('h3')[0].classList[i])
+}
+document.getElementsByTagName('h3')[0].classList[0]
+document.getElementsByTagName('h3')[0].classList.add('gg')
+document.getElementsByTagName('h3')[0].classList
+document.getElementsByTagName('h3')[0].classList.remove('gg')
+document.getElementsByTagName('h3')[0].classList.toggle('gg')
+
+attributes
+document.getElementsByTagName('button')[0]
+document.getElementsByTagName('button')[0].attributes
+document.getElementsByTagName('button')[0].attributes.length
+document.getElementsByTagName('button')[0].attributes[0]
+document.getElementsByTagName('button')[0].attributes[0].name
+document.getElementsByTagName('button')[0].attributes[0].value
+<script>
+const nodeMap = document.getElementsByTagName('button')[0].attributes;
+let text = "";
+for (let i = 0; i < nodeMap.length; i++) {
+text += nodeMap[i].name + " = " + nodeMap[i].value + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+innerHTMLinnerTexttextContent
+document.getElementById("myP").innerHTML;
+document.getElementById("myP").innerText;
+document.getElementById("myP").textContent
+
+Node
+document.querySelectorAll('li')[2]
+document.querySelectorAll('li')[2].parentNode
+document.querySelectorAll('li')[2].childNodes
+document.getElementsByTagName('ul')[0].getElementsByTagName('li')[0].parentNode.childNodes
+document.getElementsByTagName('ul')[0].getElementsByTagName('li')[0].parentNode.firstChild
+document.getElementsByTagName('ul')[0].getElementsByTagName('li')[0].parentNode.lastChild
+document.getElementsByTagName('ul')[0].getElementsByTagName('li')[0].parentNode.childNodes.length
+document.getElementsByTagName('ul')[0].getElementsByTagName('li')[0].parentNode.childNodes[3]
+document.getElementsByTagName('ul')[0].getElementsByTagName('li')[0].parentNode.childNodes[3].constructor.name
